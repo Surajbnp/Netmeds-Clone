@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+ 
+
+    <style>
+        #main{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        #p1{
+            width: 30%;
+            height: 300px;
+            box-sizing: border-box;
+            margin: 20px 50px  0px 30px;
+            border-radius: 10px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding: 30px;
+        }
+        #p2{
+            width: 30%;
+            height: fit-content;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            height: 300px;
+            padding: 60px;
+
+        }
+        hr{
+            padding: 7%;
+        }
+      #p1   div>input{
+          padding: 2%;
+          margin-top: 2%;
+      }
+      button{
+          width:120px;
+          height: 50px;
+          margin-top: 20px;
+          background-color: #32AEB1;
+      }
+      #c1{
+          padding: 10px;
+          margin-top: 5px;
+      }
+      #c2{
+          padding: 10px;
+          margin-top: 5px;
+      }
+     
+    </style>
+</head>
+<body>
+    
+  <div id="container">
+      
+    <div id="navbar"></div>
+    <hr>
+    <div id="main">
+        <div id="p1">
+            <div >
+                <input class="form-control" type="text" placeholder="Name">
+              </div>
+              <div >
+                <input class="form-control" type="number" placeholder="Phone Number">
+              </div>
+              <div >
+                <input class="form-control" type="number" placeholder="House number">
+              </div>
+              <div >
+                <input class="form-control" type="text" placeholder="Address">
+              </div>
+
+              <button>Save</button>
+        </div>
+        <div id="p2">
+            <div id="card">
+                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                <input id="c1" type="text" placeholder="Name">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+                <input id="c2" type="number" placeholder="Card Number">
+              </div> 
+
+              <button id="order" style="margin-left: 50px;">Checkout</button>
+        </div>
+    </div>
+
+
+  </div>
+
+
+
+</body>
+</html>
+
+<script type="module" src="./scripts/payment.js"></script>

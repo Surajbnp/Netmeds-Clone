@@ -1,0 +1,78 @@
+#sign{
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 70%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.down{
+    display: none;
+}
+#sign > div{
+    width: 50%;
+    text-align: start;
+}
+#phon{
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+#phon > input{
+    border: none;
+    width: 70%;
+    height: 2%;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+}
+#phon > input::placeholder{
+    font-size: 16px;
+}
+legend{
+    color: #32AEB1;
+    font-weight: bold;
+}
+fieldset{
+    border: none;
+}
+
+hr{
+    padding: 5%;
+    border: none;
+}
+
+ .signup{
+    padding: 3%;
+    width: 90%;    
+    background-color: #32AEB1;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;     
+   }
+#btn{
+    width: 90%;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+.otp{
+    border: none;
+    width: 70%;
+    height: 2%;
+    padding: 10px;
+    margin-left: 50px ;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 18px;
+    display: none;
+}
+.otp > input::placeholder{
+    font-size: 16px;
+}

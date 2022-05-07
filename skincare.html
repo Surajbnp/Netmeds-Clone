@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netmeds : Products Page</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+       hr{
+           padding-top: 13%;
+       }
+
+       #pro_container{
+           display: flex;
+           justify-content: space-around;
+           box-sizing: border-box;
+       }
+       #p2{
+           width: 81%;
+        }
+        
+        .p1{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        .p2{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            justify-content: space-around;
+            
+        }
+        
+         #p1{
+            width: 13%;
+            padding: 2%;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+            height: fit-content;
+         }
+
+         #cat{
+         }
+         #cat div{
+
+             line-height: 0.01rem;
+         }
+        
+         #fill_c div{
+            display: flex;
+            align-items: center;
+         }
+         #fill_b div{
+            display: flex;
+            align-items: center;
+         }
+         #fill_p div{
+            display: flex;
+            align-items: center;
+         }
+     
+         #fill_c{
+             display: none;
+         }
+         #fill_p{
+             display: none;
+         }
+         #fill_b{
+             display: none;
+         }
+     
+         #aerrow{
+             display: flex;
+             align-items: center;
+         }
+      
+         #aerrow > h3{
+             margin-left: 3%;
+         }
+         #aerrow > h3:hover{
+             cursor: pointer;
+         }
+        
+        </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="navbar"></div>
+
+        <hr>
+
+    <div id="pro_container">
+
+       <div id="p1">
+           <h2 style="border-bottom: 1px solid grey;">Filter</h2>
+           <div id="cat">
+               <!-- catagory filter -->
+               <div id="aerrow">
+                <i class="fa fa-chevron-right"  aria-hidden="true"></i>
+                <h3 id="catagory">Catagory</h3>
+               </div>
+                <div id="fill_c">
+                    <div>
+                        <input id="serum" 
+                         type="checkbox">
+                        <h3>Toners & Serums</h3>
+                    </div>
+                    <div>
+                        <input id="face" type="checkbox">
+                        <h3>Face Pack</h3>
+                    </div>
+                    <div>
+                        <input id="moist" type="checkbox">
+                        <h3>Moisturizers</h3>
+                    </div>
+                    <div>
+                        <input id="eye" type="checkbox">
+                        <h3> Eye Care</h3>
+                    </div>
+                    <div>
+                        <input id="mask" type="checkbox">
+                        <h3> Masks</h3>
+                    </div>
+                </div>
+
+                <!-- Price filter -->
+                <div id="aerrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <h3 id="price">Price</h3>
+                </div>
+             <div id="fill_p">
+                <div>
+                    <input id="low" type="checkbox">
+                    <h3>low to high</h3>
+                </div>
+                <div>
+                    <input id="high" type="checkbox">
+                    <h3>high to low</h3>
+                </div>
+             </div>
+
+                <!-- brands filter -->
+                <div id="aerrow">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <h3 id="brands">Brands</h3>
+                </div>
+               <div id="fill_b">
+                <div>
+                    <input id="Emmbros" type="checkbox">
+                    <!-- for serum -->
+                    <h3>Emmbros Overseas</h3>
+                </div>
+
+                <div>
+                    <input id="Botanica" type="checkbox">
+                    <!-- for moist -->
+                    <h3>St Botanica</h3>
+                </div>
+
+                <div>
+                    <input id="patanjali" type="checkbox">
+                    <!-- for facepack -->
+                    <h3>Patanjali</h3>
+                </div>
+
+                <div>
+                    <input id="glenmark" type="checkbox">
+                    <!-- for facepack -->
+                    <h3>Glenmark</h3>
+                </div>
+               </div>
+
+               <div id="aerrow">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <h3 id="brands">Manufacturers</h3>
+                </div>
+
+                <div id="aerrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <h3 id="brands">type</h3>
+                </div>
+                </div>
+
+               
+        </div>
+
+       <div id="p2">
+           <div class="p1">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/skin_care1_1920.jpg" alt="" width="100%">
+           </div>
+           <div class="p2">
+           </div>
+       </div>
+
+
+
+    </div>
+
+
+    
+
+</div>
+</body>
+</html>
+
+<script type="module" src="./scripts/skincare.js"></script>
+<script>
+    let cat = document.getElementById("catagory").addEventListener("click", ()=>{
+
+
+        let f = document.getElementById("fill_c")
+        let d = f.style.display;
+
+        f.style.display="block"
+        if(d=="block"){
+            f.style.display="none"
+        }
+    })
+
+   let price = document.getElementById("price").addEventListener("click", ()=>{
+
+
+        let f = document.getElementById("fill_p")
+        let d = f.style.display;
+
+        f.style.display="block"
+        if(d=="block"){
+            f.style.display="none"
+        }
+        })
+
+     let brand = document.getElementById("brands").addEventListener("click", ()=>{
+
+
+        let f = document.getElementById("fill_b")
+        let d = f.style.display;
+
+        f.style.display="block"
+        if(d=="block"){
+            f.style.display="none"
+        }
+        });
+
+        
+        // catagory filter
+
+
+
+    
+
+
+</script>

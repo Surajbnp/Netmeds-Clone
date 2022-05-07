@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <style>
+        hr{
+           padding-top: 13%;
+       }
+       #main{
+           display: flex;
+           justify-content: space-between;
+           box-sizing: border-box;
+           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+       }
+       .image{
+           width: 40%;
+           padding: 22px;
+       }
+       .desc{
+           width: 80%;
+           /* border: 1px solid red; */
+           padding: 20px ;
+           margin-top: 30px;
+       }
+       #type{
+          font-size: 14px;
+          border-bottom: 1px solid grey;
+          padding-bottom: 16px;
+       }
+
+       #price{
+           color: red;
+           font-weight: 600;
+           font-size: 20px;
+       }
+
+       #span{
+           text-decoration: line-through;
+       }
+
+       #mrp{
+           font-weight: 600;
+       }
+
+       #btn{
+           padding: 16px;
+           margin-top: 20px;
+           border-radius: 5px;
+           outline: none;
+           border: none;
+           background-color: #32AEB1;
+           color: azure;
+           font-weight: 600;
+       }
+       #btn:hover{
+           cursor: pointer;
+       }
+     
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="navbar"></div>
+
+        <hr>
+
+        <div id="main">
+            <div class="image">
+                
+            </div>
+            <div style="width: 50%; box-sizing: border-box;">
+                <div class="desc">
+                    <h1 id="name"></h1>
+                    <h5 id="type"></h5>
+                    <p style="font-size: 18px;">Best Price* <span style="margin-left: 10px;" id="price"></span></p>
+                    <p id="mrp">M.R.P ₹<span id="span"></span> <span style="color: green">GET 10% OFF</span></p>
+                    <p>(Inclusive of all taxes)</p>
+                    <li>MKT By : <span id="brand"></span></li>
+                    <li>Country of Origin: India</li>
+                    <li>Delivery charges if applicable will be applied at checkout</li>
+
+                    <button id="btn">ADD TO CART</button>
+                </div>
+        </div>
+
+        
+
+
+    </div>
+
+    <div style="margin-top:20px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+        <img src="./components/img/review.png" alt="">
+    </div>
+
+    <footer></footer>
+</body>
+</html>
+<script type="module" src="./scripts/product.js"></script>

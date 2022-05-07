@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="navbar"></div>
+        <hr style="padding: 3%;">
+
+        <div id="sign">
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="">
+            <div>
+                <h1>Sign In / Sign Up</h1>
+                <p>Sign up or Sign in to access your orders, special offers, health tips and more!</p>
+
+                <hr>
+
+                
+
+                <fieldset>
+                    <legend>Phone Number</legend>
+                    <div id="phon">
+                        <h3>+91 |</h3>
+                        <input id="number" type="number" placeholder="Enter your mobile no">
+                    </div>
+                    <form>
+                    <input id="otp" class="otp" type="text" placeholder="enter otp">
+                    <input id="name" class="otp" type="text" placeholder="enter name">
+                </fieldset>
+               
+                <div id="btn"><input type="submit" class="signup" ></div>
+
+            </form>
+            </div>
+            
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script type="module" src="./scripts/signup.js"></script>
+<script>
+
+    let random= 6556;
+    let login_status = false;
+    localStorage.setItem("status", JSON.stringify(login_status))
+
+
+    document.getElementById("number").addEventListener("keydown", (e) =>{
+
+        let mbl = document.getElementById("number").value
+        let btn = document.getElementById("btn")
+        let otp_div = document.getElementById("otp")
+        let name = document.getElementById("name")
+        let login_val = document.getElementById("login_val")
+        
+
+        if(e.key == "Enter"){
+
+          if(mbl.length == 0){
+              alert("Enter your mobile number")
+          }
+          else if(mbl.length >10 || mbl.length < 10){
+              alert("Invalid mobile number")
+          }
+          else{
+              
+            otp_div.style.display="block"
+            btn.style.display="block"
+            name.style.display="block"
+            random = Math.floor(Math.random(4) * random);
+            alert(`Your OTP is   ${random}`)  
+          }
+        }
+    })
+
+
+
+     document.querySelector("form").addEventListener("submit", formSubmit);
+        function formSubmit(event){
+          event.preventDefault();
+
+          let otp = document.getElementById("otp").value
+          let name = document.getElementById("name").value
+
+        if(otp == random){
+            login_status = true;
+            localStorage.setItem("status", JSON.stringify(login_status))
+            localStorage.setItem("username", JSON.stringify(name))
+            alert("Login succsessfully...")  
+            window.location.href="index.html"
+            
+        }
+        else{
+            alert("Invalid OTP")
+        } 
+
+        }   
+
+    
+</script>
